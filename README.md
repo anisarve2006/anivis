@@ -1,9 +1,11 @@
 <div align="center">
 
-# 📷 VisionKit
+# 📷 AniVis (VisionKit)
 
 **A modular, reliable, and developer-friendly Python computer vision library.**
 
+[![PyPI version](https://img.shields.io/pypi/v/anivis.svg?color=blue)](https://pypi.org/project/anivis/)
+[![GitHub](https://img.shields.io/badge/GitHub-anisarve2006%2Fanivis-181717?logo=github)](https://github.com/anisarve2006/anivis)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![Code Style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
@@ -22,7 +24,7 @@ Make reusable computer vision and visual perception tools accessible through a c
 - **Modular:** Install and use only the functionality you need.
 - **Reliable:** Validated inputs, predictable outputs, automated tests.
 - **RGB by Default:** Native NumPy arrays in RGB format—no more unexpected BGR color inversion headaches.
-- **Efficient:** Measure performance before optimizing.
+- **Efficient:** Measure performance before optimizing (SIMD-accelerated quality metrics).
 - **Extensible:** Support established backends (OpenCV / NumPy / SciPy) instead of reinventing every algorithm.
 - **Developer-Friendly:** Typed signatures, helpful validation errors, and practical documentation.
 
@@ -30,17 +32,18 @@ Make reusable computer vision and visual perception tools accessible through a c
 
 ## ⚡ Quickstart
 
-### Installation
-
-Install VisionKit in editable mode with development dependencies:
+### Installation from PyPI
 
 ```bash
-# Optional: create and activate virtual environment
-python -m venv .venv
-# On Windows:
-.venv\Scripts\activate
-# On Linux/macOS:
-# source .venv/bin/activate
+pip install anivis
+```
+
+### Installation from Source (Development)
+
+```bash
+# Clone the repository
+git clone https://github.com/anisarve2006/anivis.git
+cd anivis
 
 # Install in development mode
 pip install -e ".[dev]"
@@ -48,8 +51,10 @@ pip install -e ".[dev]"
 
 ### 5-Line Example
 
+You can import as either `anivis` or `visionkit`:
+
 ```python
-import visionkit as vk
+import anivis as vk  # or: import visionkit as vk
 
 image = vk.read("input.jpg")
 gray = vk.grayscale(image)
@@ -104,7 +109,7 @@ python example.py
 - `vk.morphology_gradient`, `vk.top_hat`, `vk.black_hat`: Advanced structural feature extraction.
 
 ### 8. Image Comparison Metrics
-- `vk.mean_squared_error(im1, im2)` (or `vk.mse`): Pixel error.
+- `vk.mean_squared_error(im1, im2)` (or `vk.mse`): SIMD-accelerated pixel error.
 - `vk.psnr(im1, im2)`: Peak Signal-to-Noise Ratio in dB.
 - `vk.ssim(im1, im2)`: Structural Similarity Index.
 
@@ -121,7 +126,7 @@ pytest -v
 Run test suite with code coverage:
 
 ```bash
-pytest --cov=visionkit --cov-report=term-missing
+pytest --cov=anivis --cov-report=term-missing
 ```
 
 ---
@@ -155,6 +160,12 @@ pytest --cov=visionkit --cov-report=term-missing
 
 ---
 
+## 👤 Author
+
+Developed and maintained by **[Anirudh Sarve](https://github.com/anisarve2006)**.
+
+---
+
 ## 📄 License
 
-VisionKit is open-source software licensed under the [MIT License](LICENSE).
+AniVis is open-source software licensed under the [MIT License](LICENSE).

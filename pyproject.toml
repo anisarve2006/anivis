@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
-    { name = "Anirudh Sarve" }
+    { name = "Anirudh Ghanshyam Sarve" }
 ]
 keywords = [
     "computer-vision",
@@ -62,10 +62,10 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/anirudhsarve/anivis"
-Repository = "https://github.com/anirudhsarve/anivis.git"
-Issues = "https://github.com/anirudhsarve/anivis/issues"
-Changelog = "https://github.com/anirudhsarve/anivis/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/anisarve2006/anivis"
+Repository = "https://github.com/anisarve2006/anivis.git"
+Issues = "https://github.com/anisarve2006/anivis/issues"
+Changelog = "https://github.com/anisarve2006/anivis/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
