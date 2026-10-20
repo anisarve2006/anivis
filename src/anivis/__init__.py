@@ -120,6 +120,7 @@ __all__ = [
     "validate_image",
     "validate_kernel_size",
     "AniVisError",
+    "VisionKitError",
     "ValidationError",
     "InvalidImageError",
     "InvalidKernelError",

@@ -1,6 +1,6 @@
 """Geometric image transformations and resizing."""
 
-from typing import Optional, Tuple, Union
+from typing import Optional, Union
 import cv2
 import numpy as np
 

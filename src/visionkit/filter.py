@@ -1,6 +1,6 @@
 """Image filtering, smoothing, and blur operations."""
 
-from typing import Optional, Union
+from typing import Optional
 import cv2
 import numpy as np
 

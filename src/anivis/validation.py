@@ -1,6 +1,6 @@
 """Validation utilities for images, kernels, and parameters."""
 
-from typing import Iterable, Optional, Sequence, Tuple, Union
+from typing import Optional, Sequence, Tuple, Union
 import numpy as np
 
 from anivis.exceptions import InvalidImageError, InvalidKernelError, ValidationError

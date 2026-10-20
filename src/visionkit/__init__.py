@@ -6,6 +6,5 @@ Basic usage:
     >>> image = vk.read("input.jpg")
 """
 
-import anivis
 from anivis import *  # noqa: F401, F403
 from anivis import __all__, __version__  # noqa: F401

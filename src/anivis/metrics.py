@@ -1,6 +1,5 @@
 """Image comparison and quality metrics (MSE, PSNR, SSIM)."""
 
-from typing import Union
 import cv2
 import numpy as np
 

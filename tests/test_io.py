@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from visionkit.exceptions import ImageReadError, ImageWriteError, UnsupportedFormatError
+from visionkit.exceptions import ImageReadError, UnsupportedFormatError
 import visionkit as vk
 
 
