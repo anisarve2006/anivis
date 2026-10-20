@@ -43,10 +43,14 @@ htmlcov/
 *.swo
 *~
 
-# Temporary outputs
+# Temporary outputs and working inputs
 output.png
 output_*.png
 test_output/
+input/
+output/
+dist/
+build/
 *.jpg
 !tests/fixtures/*.jpg
 !benchmarks/data/*.jpg

@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "visionkit"
+name = "anivis"
 version = "0.1.0"
 description = "A modular, reliable, and developer-friendly Python computer vision library"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
-    { name = "VisionKit Contributors" }
+    { name = "Anirudh Sarve" }
 ]
 keywords = [
     "computer-vision",
@@ -18,7 +18,9 @@ keywords = [
     "vision",
     "perception",
     "opencv",
-    "numpy"
+    "numpy",
+    "anivis",
+    "visionkit"
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -46,7 +48,9 @@ dev = [
     "pytest>=7.0.0",
     "pytest-cov>=4.0.0",
     "pytest-benchmark>=4.0.0",
-    "ruff>=0.1.0"
+    "ruff>=0.1.0",
+    "build>=1.0.0",
+    "twine>=4.0.0"
 ]
 docs = [
     "sphinx>=6.0.0",
@@ -54,15 +58,14 @@ docs = [
     "myst-parser>=1.0.0"
 ]
 all = [
-    "visionkit[dev,docs]"
+    "anivis[dev,docs]"
 ]
 
 [project.urls]
-Homepage = "https://github.com/visionkit/visionkit"
-Documentation = "https://visionkit.readthedocs.io"
-Repository = "https://github.com/visionkit/visionkit.git"
-Issues = "https://github.com/visionkit/visionkit/issues"
-Changelog = "https://github.com/visionkit/visionkit/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/anirudhsarve/anivis"
+Repository = "https://github.com/anirudhsarve/anivis.git"
+Issues = "https://github.com/anirudhsarve/anivis/issues"
+Changelog = "https://github.com/anirudhsarve/anivis/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]

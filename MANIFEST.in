@@ -1,0 +1,18 @@
+# Include documentation and license
+include LICENSE
+include README.md
+include CHANGELOG.md
+include pyproject.toml
+
+# Exclude scratch, inputs, outputs, and temporary processing directories
+prune input
+prune output
+prune benchmarks
+prune .github
+prune .pytest_cache
+
+exclude example.py
+exclude process_inputs.py
+exclude *.jpg
+exclude *.png
+exclude .coverage
